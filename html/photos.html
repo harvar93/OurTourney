@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OurTourney</title>
+	<link rel="stylesheet" type="text/css" href="..\css\style.css">
+	<link rel="stylesheet" type="text/css" href="..\css\all.css">
+	<script src="https://kit.fontawesome.com/223caf82d8.js" crossorigin="anonymous"></script>               
+</head>
+<body>
+	<div class="menu-bar">
+		<ul>
+			<li><a href="..\index.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
+			<li><a href="..\html\hallway.html"><i class="fa-solid fa-photo-film"></i>Hallway</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="..\html\photos.html"><i class="fa-regular fa-images"></i>Photos</a></li>
+						<li><a href="..\html\videos.html"><i class="fa-solid fa-video"></i>Videos</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="..\html\players.html"><i class="fa-solid fa-people-roof"></i>Players</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="..\html\list.html"><i class="fa-solid fa-list"></i>List</a></li>
+						<li class="hover-me"><a href="..\html\ranking.html"><i class="fa-solid fa-ranking-star"></i>Ranking</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#"><i class="fa-solid fa-fire-flame-curved"></i>Tournament</a>
+				<div class="sub-menu-1">
+					<ul>
+							<li></i><a href="#"><i class="fa-solid fa-badminton"></i>Badminton</a></li>
+							<li></i><a href="#"><i class="fa-solid fa-cricket-bat-ball"></i>Cricket</a></li>
+							<li></i><a href="#"><i class="fa-solid fa-table-tennis-paddle-ball"></i>Table-Tennis</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#"><i class="fa-solid fa-inr"></i>Pricing</a>
+				<div class="sub-menu-1">
+					<ul>
+							<li></i><a href="#"><i class="fa-solid fa-calendar-days"></i>Badminton</a></li>
+							<li></i><a href="#"><i class="fa-regular fa-clock"></i>Cricket</a></li>
+							<li></i><a href="#"><i class="fa-solid fa-sitemap"></i>Table-Tennis</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="..\html\registration.html"><i class="fa-solid fa-edit"></i>Registration</a></li>
+			<li><a href="#"><i class="fa-solid fa-user"></i>About Us</a></li>
+			<li><a href="#"><i class="fa-solid fa-phone"></i>Contact</a></li>
+		</ul>
+	</div>
+	<div class="photos">
+		<br><h1>PHOTOS</h1><br><br>
+	<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+	</div>	
+	<div class="full-img" id="FullImgBox">
+		<img src="images\01.jpg" alt="Image - 01" id="FullImg">
+		<span onclick="closeFullImg()">X</span>
+	</div>
+	<div class="img-gallery">
+		<img src="..\media\photos\01.jpg" alt="Image - 01" onclick="openFullImg(this.src)">
+		<img src="..\media\photos\02.jpg" alt="Image - 02" onclick="openFullImg(this.src)">
+		<img src="..\media\photos\03.jpg" alt="Image - 03" onclick="openFullImg(this.src)">
+		<img src="..\media\photos\04.jpg" alt="Image - 04" onclick="openFullImg(this.src)">
+		<img src="..\media\photos\05.jpg" alt="Image - 05" onclick="openFullImg(this.src)">
+		<img src="..\media\photos\06.jpg" alt="Image - 06" onclick="openFullImg(this.src)">
+		<img src="..\media\photos\07.jpg" alt="Image - 07" onclick="openFullImg(this.src)">
+		<img src="..\media\photos\08.jpg" alt="Image - 08" onclick="openFullImg(this.src)">
+		<img src="..\media\photos\09.jpg" alt="Image - 09" onclick="openFullImg(this.src)">
+		<img src="..\media\photos\10.jpg" alt="Image - 10" onclick="openFullImg(this.src)">
+	</div>
+	<script type="text/javascript">
+		var FullImgBox = document.getElementById("FullImgBox");
+		var FullImg = document.getElementById("FullImg");
+		function openFullImg(pic)
+		{
+			FullImgBox.style.display = "flex";
+			FullImg.src = pic;
+		}
+		function closeFullImg(pic)
+		{
+			FullImgBox.style.display = "none";
+		}
+	</script>
+</body>
+</html>
